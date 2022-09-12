@@ -1,0 +1,16 @@
+
+import './App.css';
+import React, { useState } from 'react';
+
+function App() {
+   const [count, cntInc] = useState(0);
+
+   return <div>
+      <span>Количество: {count}</span>
+      <br></br>
+      <button onClick={() => cntInc(count + 1)}>+1</button>
+      <button onClick={() => cntInc(count - 1)}>-1</button>
+   </div>;
+}
+
+export default App;
